@@ -69,6 +69,7 @@ struct ContentView: View {
     func rowRemove(offsets: IndexSet) {
         setData.nameData.remove(atOffsets: offsets)
         UserDefaults.standard.setValue(setData.nameData, forKey: "save")
+        print("github")
     }
     
     func random() -> Void {
